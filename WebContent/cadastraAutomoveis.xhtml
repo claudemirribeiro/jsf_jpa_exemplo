@@ -1,0 +1,22 @@
+<html 	xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://java.sun.com/jsf/html">
+
+<h:body>
+	<h:form>
+
+	<h:panelGrid columns="2">
+			Modelo: <h:inputText value="#{automovelBean.automovel.modelo}" />
+			Ano Fabricação: <h:inputText value="#{automovelBean.automovel.anoFabricacao}" />
+
+			Ano Modelo: <h:inputText value="#{automovelBean.automovel.anoModelo}" />
+			MArca: <h:inputText value="#{automovelBean.automovel.marca}" />
+
+			Observações:<h:inputTextarea  value="#{automovelBean.automovel.observacoes}" />
+			
+
+	</h:panelGrid>
+	<h:commandButton action="#{automovelBean.salvar}" value="Salvar" />
+	</h:form>
+
+</h:body>
+</html>
